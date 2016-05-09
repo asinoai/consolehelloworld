@@ -6,19 +6,19 @@ public class Console  {
 
         System.out.println("Start!");
 
-        HelloWorldPrinter.print();
+        //IHelloPrinter.print();
 
-        final HelloWorldPrinter printer = new HelloWorldPrinter();
+        final IHelloPrinter printer = new HelloWorldPrinter(0);
 
-        printer.incrementCounterAndPrint();
+        printer.print();
 
-        printer.incrementCounterAndPrint();
+        printer.print();
 
-        final HelloWorldPrinter anotherPrinter = new HelloWorldPrinter();
+        final IHelloPrinter anotherPrinter = new HelloMoonPrinter(1);
 
-        anotherPrinter.incrementCounterAndPrint();
+        anotherPrinter.print();
 
-        anotherPrinter.incrementCounterAndPrint();
+        anotherPrinter.print();
 
     }
 }
