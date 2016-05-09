@@ -2,6 +2,7 @@ package aron.sinoai.consolehelloworld;
 
 public class Console  {
 
+
     public static void main(String[] args) {
         System.out.println("Start!");
 
@@ -14,5 +15,17 @@ public class Console  {
         final IHelloPrinter anotherPrinter = new HelloMoonPrinter(1);
         anotherPrinter.print();
         anotherPrinter.print();
+
+        final IHelloPrinter customPrinter = new IHelloPrinter() {
+            @Override
+            public void print() {
+                System.out.println("Hello, Custom anonymous!");
+            }
+        };
+
+        customPrinter.print();
+        customPrinter.print();
+
     }
+
 }
