@@ -3,19 +3,17 @@ package aron.sinoai.consolehelloworld;
 /**
  */
 
-public class HelloMoonPrinter implements IHelloPrinter{
-
-    private int counter;
+public class HelloMoonPrinter extends AbstractHelloPrinter{
 
     public HelloMoonPrinter(final int counterStartIndex) {
-        counter = counterStartIndex;
+        super(counterStartIndex);
     }
 
     public void print() {
-        counter += 2;
-        System.out.println(counter);
+        incrementCounter();
 
         System.out.println("Hello, Moon!");
 
     }
+
 }
