@@ -16,4 +16,9 @@ public class HelloMoonPrinter extends AbstractHelloPrinter{
 
     }
 
+    final protected void incrementCounter() {
+        System.out.println("Modified!");
+        super.incrementCounter();
+    }
+
 }
