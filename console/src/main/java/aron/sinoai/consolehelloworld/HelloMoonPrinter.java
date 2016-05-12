@@ -6,7 +6,7 @@ package aron.sinoai.consolehelloworld;
 public class HelloMoonPrinter extends AbstractHelloPrinter{
 
     public HelloMoonPrinter(final int counterStartIndex) {
-        super(counterStartIndex);
+        super(counterStartIndex, 2);
     }
 
     public void print() {

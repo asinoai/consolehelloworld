@@ -5,7 +5,7 @@ public class Console  {
 
     public static void main(String[] args) {
 
-        Console console = new Console();
+        final Console console = new Console();
         console.runMain();
 
     }

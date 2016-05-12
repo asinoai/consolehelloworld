@@ -5,9 +5,11 @@ package aron.sinoai.consolehelloworld;
 public abstract class AbstractHelloPrinter implements IHelloPrinter{
 
     private int counter;
+    private final int step;
 
-    public AbstractHelloPrinter(final int counterStartIndex) {
+    public AbstractHelloPrinter(final int counterStartIndex, final int step) {
         counter = counterStartIndex;
+        this.step = step;
     }
 
     protected void incrementCounter() {
